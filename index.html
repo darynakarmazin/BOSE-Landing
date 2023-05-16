@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <!-- #endregion -->
 
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <div class="header__top">
         <img src="./img/logo.png" alt="Bose logo" />
         <img src="./img/icons/icon-burger-menu.png" alt="Burger menu" />
@@ -20,7 +26,7 @@
       <div class="header__bottom">
         <img src="./img/sound-waves.png" alt="Sound waves" />
 
-        <h1>
+        <h1 class="header__bottom-title">
           The world shades.<br />
           Your music shines.
         </h1>
@@ -33,28 +39,28 @@
         <img src="./img/icons/icon-close.png" alt="Burger menu" />
       </div>
       <div class="menu__bottom">
-        <nav>
+        <nav class="nav">
           <ul class="menu__bottom-list">
-            <li><a href=""> Home</a></li>
-            <li><a href=""> Recommended</a></li>
-            <li><a href=""> Categories</a></li>
-            <li><a href=""> How to buy</a></li>
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#recommended" class="nav__link">Recommended</a></li>
+            <li><a href="#categories" class="nav__link">Categories</a></li>
+            <li><a href="#how-to-buy" class="nav__link">How to buy</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
     <main>
-      <section>
+      <section id="recommended">
         <h2>Recommended</h2>
       </section>
-      <section>
+      <section id="categories">
         <h2>
           Browse Bose<br />
           products by category
         </h2>
       </section>
-      <section>
+      <section id="how-to-buy">
         <h2>
           Why buy direct<br />
           from Bose
