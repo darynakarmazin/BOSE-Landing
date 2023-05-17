@@ -5,10 +5,12 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  color: #292929;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 section {
-  height: 800px;
 }
 
 ul,
@@ -47,23 +49,31 @@ p {
   margin-bottom: 40px;
 }
 .header__bottom-title {
-  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 800;
   font-size: 48px;
-  line-height: 48px;
+  line-height: 100%;
   letter-spacing: -1.5px;
-  color: #292929;
 }
 /* #endregion */
 /* #region menu */
 .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   height: 100vh;
   padding: 64px 120px;
   background-color: #e8eff9;
+}
+
+.menu:target {
+  transform: translateX(0%);
 }
 
 .menu__top {
@@ -83,10 +93,63 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 100%;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #292929;
   text-decoration: none;
+}
+/* #endregion */
+
+.main {
+  padding: 120px;
+}
+
+.section__title {
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+/* #region section__recommended */
+.recommended {
+  margin-bottom: 120px;
+}
+
+.recommended__products {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.product__photo {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.product__title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.product__category {
+  margin-bottom: 12px;
+}
+
+.product__price {
+  font-weight: bold;
+}
+
+/* #endregion */
+
+/* #region section__categories */
+/* #endregion */
+
+/* #region section__how-to-buy */
+.how-to-buy__title {
+  text-align: left;
 }
 /* #endregion */
