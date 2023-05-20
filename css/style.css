@@ -246,11 +246,11 @@ p {
 
 @media (max-width: 576px) {
   .photo-wide {
-    width: 48, 5%;
+    width: 48.5%;
   }
 
   .photo-small {
-    width: 48, 5%;
+    width: 48.5%;
   }
 }
 /* #endregion */
