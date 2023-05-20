@@ -31,7 +31,7 @@ p {
   box-sizing: border-box;
   height: 100vh;
   padding: 64px 120px;
-  background-image: url(/img/headphones-image.png);
+  background-image: url(./img/headphones-image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@ p {
 @media (max-width: 1024px) {
   .header {
     padding: 64px 72px;
-    background-image: url(/img/headphones-image-tab.png);
+    background-image: url(./img/headphones-image-tab.png);
   }
 }
 
@@ -302,7 +302,7 @@ p {
   bottom: 0;
   z-index: -1;
   height: 460px;
-  background-image: url(/img/footer-bg.png);
+  background-image: url(./img/footer-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
