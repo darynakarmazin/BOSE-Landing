@@ -40,6 +40,20 @@ p {
   background-size: cover;
 }
 
+@media (max-width: 1024px) {
+  .header {
+    padding: 64px 72px;
+    background-image: url(/img/headphones-image-tab.png);
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 32px 20px;
+    background-position: 0 0;
+  }
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -54,6 +68,18 @@ p {
   font-size: 48px;
   line-height: 100%;
   letter-spacing: -1.5px;
+}
+
+@media (max-width: 1024px) {
+  .header__bottom-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__bottom-title {
+    font-size: 32px;
+  }
 }
 /* #endregion */
 /* #region menu */
@@ -72,6 +98,18 @@ p {
   background-color: #e8eff9;
 }
 
+@media (max-width: 1024px) {
+  .menu {
+    padding: 64px 72px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    padding: 32px 20px;
+  }
+}
+
 .menu:target {
   transform: translateX(0%);
 }
@@ -80,6 +118,12 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
+}
+
+@media (max-width: 576px) {
+  .menu__top {
+    margin-bottom: 36px;
+  }
 }
 
 .menu__bottom-list {
@@ -106,9 +150,15 @@ p {
   background-color: #fff;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .main {
-    padding: 40px;
+    padding: 120px 72px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 120px 20px;
   }
 }
 
@@ -136,6 +186,20 @@ p {
   gap: 24px;
 }
 
+@media (max-width: 1024px) {
+  .recommended__products {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .recommended__products {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .product__photo {
   width: 100%;
   margin-bottom: 32px;
@@ -155,11 +219,6 @@ p {
   font-weight: bold;
 }
 
-@media (max-width: 640px) {
-  .recommended__products {
-    flex-direction: column;
-  }
-}
 /* #endregion */
 
 /* #region section__categories */
@@ -180,10 +239,22 @@ p {
 
 .photo-wide {
   width: 65%;
+  object-fit: cover;
 }
 
 .photo-small {
   width: 32%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .photo-wide {
+    width: 48, 5%;
+  }
+
+  .photo-small {
+    width: 48, 5%;
+  }
 }
 /* #endregion */
 
@@ -193,6 +264,12 @@ p {
   margin: 0 auto;
   display: flex;
   gap: 24px;
+}
+
+@media (max-width: 576px) {
+  .how-to-buy {
+    display: block;
+  }
 }
 
 .how-to-buy__title {
@@ -232,4 +309,24 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.logo {
+  height: 24px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    height: 16px;
+  }
+}
+
+.waves {
+  height: 76px;
+}
+
+@media (max-width: 576px) {
+  .waves {
+    height: 38px;
+  }
 }
